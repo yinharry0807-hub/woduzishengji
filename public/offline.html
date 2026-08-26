@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>离线中 · 个人成长系统</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #09090b;
+        color: #e4e4e7;
+        font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      .card {
+        text-align: center;
+        padding: 32px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .emoji {
+        font-size: 48px;
+      }
+      h1 {
+        font-size: 18px;
+        margin: 16px 0 8px;
+      }
+      p {
+        font-size: 13px;
+        color: #71717a;
+        margin: 0 0 20px;
+      }
+      button {
+        background: linear-gradient(90deg, #8b5cf6, #d946ef);
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        padding: 10px 24px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="emoji">📡</div>
+      <h1>当前处于离线状态</h1>
+      <p>联网后刷新页面即可继续使用，你的数据都安全保存在云端。</p>
+      <button onclick="location.reload()">重新连接</button>
+    </div>
+  </body>
+</html>

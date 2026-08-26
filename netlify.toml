@@ -1,0 +1,16 @@
+# Netlify 部署配置
+# 连接 GitHub 仓库后，push 到 main 分支即自动构建部署
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# 重要：在 Netlify → Site settings → Environment variables 配置以下变量
+# NEXT_PUBLIC_SUPABASE_URL
+# NEXT_PUBLIC_SUPABASE_ANON_KEY
+# SUPABASE_SERVICE_ROLE_KEY
+# SESSION_SECRET
+# DEEPSEEK_API_KEY
+# DEEPSEEK_BASE_URL（可选，默认 https://api.deepseek.com）
